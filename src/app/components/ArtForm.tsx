@@ -15,28 +15,13 @@ export default function ArtForm() {
                         </p>
                     </Accordion.Title>
                     <Accordion.Content>
-                        <p className="mb-2 text-gray-500 dark:text-gray-400">
+                        <p className="mb-2 text-gray-500 dark:text-gray-400 font-normal text-sm">
                             <p>
                                 Flowbite is first conceptualized and designed using the Figma software so everything you see in the library
                                 has a design equivalent in our Figma file.
                             </p>
                         </p>
-                        <p className="text-gray-500 dark:text-gray-400">
-                            <p>
-                                Check out the
-                            </p>
-                            <a
-                                className="text-cyan-600 hover:underline dark:text-cyan-500"
-                                href="https://flowbite.com/figma/"
-                            >
-                                <p>
-                                    Figma design system
-                                </p>
-                            </a>
-                            <p>
-                                based on the utility classes from Tailwind CSS and components from Flowbite.
-                            </p>
-                        </p>
+
                     </Accordion.Content>
                 </Accordion.Panel>
 
