@@ -1,10 +1,47 @@
 
-import { Button, Checkbox, Label, TextInput } from 'flowbite-react';
+import { Button, Checkbox, Label, TextInput, Accordion } from 'flowbite-react';
 
 
 export default function ArtForm() {
     return (
-        <form className="flex flex-col gap-4">
+        <form className="flex flex-col gap-4 mt-3">
+
+            <Accordion>
+
+                <Accordion.Panel>
+                    <Accordion.Title>
+                        <p className='text-gray-500 font-normal text-sm '>
+                            Find out more
+                        </p>
+                    </Accordion.Title>
+                    <Accordion.Content>
+                        <p className="mb-2 text-gray-500 dark:text-gray-400">
+                            <p>
+                                Flowbite is first conceptualized and designed using the Figma software so everything you see in the library
+                                has a design equivalent in our Figma file.
+                            </p>
+                        </p>
+                        <p className="text-gray-500 dark:text-gray-400">
+                            <p>
+                                Check out the
+                            </p>
+                            <a
+                                className="text-cyan-600 hover:underline dark:text-cyan-500"
+                                href="https://flowbite.com/figma/"
+                            >
+                                <p>
+                                    Figma design system
+                                </p>
+                            </a>
+                            <p>
+                                based on the utility classes from Tailwind CSS and components from Flowbite.
+                            </p>
+                        </p>
+                    </Accordion.Content>
+                </Accordion.Panel>
+
+            </Accordion>
+
             <div className='flex  gap-3'>
                 <div className='flex-1'>
                     <div className="mb-1 block">

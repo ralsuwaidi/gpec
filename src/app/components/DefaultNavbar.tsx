@@ -22,7 +22,7 @@ export default function DefaultNavbar() {
                     active
                     href="#"
                 >
-                    <p>
+                    <p className='text-indigo-600 font-bold'>
                         Art
                     </p>
                 </Navbar.Link>
