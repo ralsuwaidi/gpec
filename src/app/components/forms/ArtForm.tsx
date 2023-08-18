@@ -16,10 +16,8 @@ export default function ArtForm() {
                     </Accordion.Title>
                     <Accordion.Content>
                         <p className="mb-2 text-gray-500 dark:text-gray-400 font-normal text-sm">
-                            <p>
-                                Flowbite is first conceptualized and designed using the Figma software so everything you see in the library
-                                has a design equivalent in our Figma file.
-                            </p>
+                            Flowbite is first conceptualized and designed using the Figma software so everything you see in the library
+                            has a design equivalent in our Figma file.
                         </p>
 
                     </Accordion.Content>

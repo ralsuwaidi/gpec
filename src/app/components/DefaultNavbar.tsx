@@ -20,13 +20,13 @@ export default function DefaultNavbar() {
             <Navbar.Collapse>
                 <Navbar.Link
                     active
-                    href="#"
+                    href="/art"
                 >
                     <p className='text-indigo-600 font-bold'>
                         Art
                     </p>
                 </Navbar.Link>
-                <Navbar.Link href="#">
+                <Navbar.Link href="/literature">
                     Literature
                 </Navbar.Link>
                 <Navbar.Link href="#">
