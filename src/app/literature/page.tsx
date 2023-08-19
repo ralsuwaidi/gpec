@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <main className="">
             <div className="md:flex">
-                <div className="flex-grow md:h-screen h-[60vh] mb:pb-20">
+                <div className="flex-grow md:h-[90vh] h-[60vh] mb:pb-20">
                     {/* Image component */}
                     <Tilt className="w-full h-full mt-2" tiltMaxAngleX={2} tiltMaxAngleY={2}>
                         <Image
@@ -23,7 +23,7 @@ export default function Home() {
                     </Tilt>
 
                 </div>
-                <div className="md:w-1/2 md:pl-6  md:h-screen md:pb-20 md:overflow-y-auto md:no-scrollbar mb-12">
+                <div className="md:w-1/2 md:pl-6  md:h-[90vh] md:pb-20 md:overflow-y-auto md:no-scrollbar mb-12">
                     {/* Form component */}
 
                     <LiteratureForm />
