@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <main className="">
             <div className="md:flex">
-                <div className="flex-grow md:h-screen h-[80vh] mb:pb-20">
+                <div className="flex-grow md:h-screen h-[60vh] mb:pb-20">
                     {/* Image component */}
                     <Tilt className="w-full h-full mt-2" tiltMaxAngleX={2} tiltMaxAngleY={2}>
                         <Image

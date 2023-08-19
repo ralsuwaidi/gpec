@@ -5,7 +5,7 @@ import GeneralInput from './GeneralInput';
 
 export default function ArtForm() {
     return (
-        <form className="flex flex-col gap-4 mt-3">
+        <form className="flex flex-col gap-4 mt-3 ">
 
             <Accordion>
 

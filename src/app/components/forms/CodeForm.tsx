@@ -3,7 +3,7 @@ import { Button, Checkbox, Label, TextInput, Accordion, Textarea } from 'flowbit
 import GeneralInput from './GeneralInput';
 
 
-export default function LiteratureForm() {
+export default function CodeForm() {
     return (
         <form className="flex flex-col gap-4 mt-3">
 
@@ -37,7 +37,7 @@ export default function LiteratureForm() {
 
 
             <div>
-                <p className='font-semibold'>AI Literature</p>
+                <p className='font-semibold'>AI Code</p>
                 <p className='text-sm text-gray-500'>Create a short story using AI text generation based on the prompt below. The story should not surpass three prompts.</p>
                 <div className=' w-full text-center bg-gray-50 border-gray-200 border rounded-md mt-4 mb-2 py-1'>
                     <p className='text-sm '>A story about an old man finding his youth in year 2072</p>
@@ -63,7 +63,6 @@ export default function LiteratureForm() {
             </div>
 
 
-
             <TextInputElement title="AI Model Used" placeholder="ChatGPT-4" />
 
             <TextInputElement title="First Text Input" placeholder="Write a prompt about" />
@@ -74,9 +73,6 @@ export default function LiteratureForm() {
 
             <TextInputElement title="Third Text Input" placeholder="Write a prompt about" />
             <TextareaElement title="Third Generated Text" placeholder="There was once a ..." />
-
-
-
 
 
             <div className="flex items-center gap-2">

@@ -29,7 +29,7 @@ export default function DefaultNavbar() {
                 <Navbar.Link href="/literature">
                     Literature
                 </Navbar.Link>
-                <Navbar.Link href="#">
+                <Navbar.Link href="/code">
                     Code
                 </Navbar.Link>
             </Navbar.Collapse>
