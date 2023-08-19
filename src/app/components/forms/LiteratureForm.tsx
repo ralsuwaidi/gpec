@@ -7,7 +7,7 @@ export default function LiteratureForm() {
     return (
         <form className="flex flex-col gap-4 mt-3">
 
-            <Accordion>
+            <Accordion collapseAll>
 
                 <Accordion.Panel>
                     <Accordion.Title>

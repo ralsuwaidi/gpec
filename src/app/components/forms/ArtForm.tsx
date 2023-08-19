@@ -1,5 +1,5 @@
 
-import { Button, Checkbox, Label, TextInput, Accordion } from 'flowbite-react';
+import { Button, Checkbox, Label, TextInput, Accordion, Textarea } from 'flowbite-react';
 import GeneralInput from './GeneralInput';
 
 
@@ -7,7 +7,7 @@ export default function ArtForm() {
     return (
         <form className="flex flex-col gap-4 mt-3 ">
 
-            <Accordion>
+            <Accordion collapseAll>
 
                 <Accordion.Panel>
                     <Accordion.Title>
@@ -56,49 +56,59 @@ export default function ArtForm() {
 
 
 
-            <div className='flex-1'>
-                <div className="mb-1 block">
-                    <Label
-                        htmlFor="nationality"
-                        value="Nationality"
-                    />
-                </div>
-                <TextInput
-                    id="nationality"
-                    required
-                    placeholder='Nationality'
-                    type="text"
-                />
-            </div>
-
-            <div className='flex-1'>
-                <div className="mb-1 block">
-                    <Label
-                        htmlFor="nationality"
-                        value="Nationality"
-                    />
-                </div>
-                <TextInput
-                    id="nationality"
-                    required
-                    placeholder='Nationality'
-                    type="text"
-                />
-            </div>
+            <TextInputElement title="AI Model Used" placeholder="Midjourney" />
+            <TextareaElement title="Prompt" placeholder="A sad picture of a cat ..." />
 
 
-
-            <div className="flex items-center gap-2">
-                <Checkbox id="remember" />
-                <Label htmlFor="remember">
-                    Remember me
-                </Label>
-            </div>
             <div className='max-w-[400px]'>
                 <Button type="submit" color="dark">
                     Submit
                 </Button>
             </div>
         </form>
+    )
+}
+
+function TextareaElement(props: any) {
+    return (
+        <div
+            className="flex-1"
+            id={props.title}
+        >
+            <div className="mb-1 block">
+                <Label
+                    htmlFor={props.title}
+                    value={props.title}
+                />
+            </div>
+            <Textarea className=' text-sm'
+                id={props.title}
+                placeholder={props.placeholder}
+                required
+                rows={4}
+            />
+        </div>
+    )
+}
+
+function TextInputElement(props: any) {
+    return (
+        <>
+            <div className='flex-1'>
+                <div className="mb-1 block">
+                    <Label
+                        htmlFor={props.title}
+                        value={props.title}
+                    />
+                </div>
+                <TextInput
+                    id={props.title}
+                    required
+                    sizing={props.sizing}
+                    placeholder={props.placeholder}
+                    type="text"
+                />
+            </div>
+        </>
     )
 }
