@@ -21,13 +21,11 @@ export default function Home() {
                             className="w-full h-full object-cover rounded-2xl"
                         />
                     </Tilt>
-
                 </div>
+
                 <div className="md:w-1/2 md:pl-6  md:h-screen md:pb-20 md:overflow-y-auto md:no-scrollbar mb-12">
                     {/* Form component */}
-
                     <LiteratureForm />
-
                 </div>
             </div>
         </main>

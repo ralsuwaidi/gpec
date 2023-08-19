@@ -8,8 +8,8 @@ import Tilt from 'react-parallax-tilt';
 export default function Home() {
     return (
         <main className="">
-            <div className="flex">
-                <div className="flex-grow h-screen pb-20">
+            <div className="md:flex">
+                <div className="flex-grow md:h-screen h-[80vh] mb:pb-20">
                     {/* Image component */}
                     <Tilt className="w-full h-full mt-2" tiltMaxAngleX={2} tiltMaxAngleY={2}>
                         <Image
@@ -23,10 +23,11 @@ export default function Home() {
                     </Tilt>
 
                 </div>
-                <div className="w-1/2 pl-6  h-screen pb-20 overflow-y-auto no-scrollbar">
+                <div className="md:w-1/2 md:pl-6  md:h-screen md:pb-20 md:overflow-y-auto md:no-scrollbar mb-12">
                     {/* Form component */}
 
                     <ArtForm />
+
                 </div>
             </div>
         </main>
